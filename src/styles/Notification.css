@@ -1,0 +1,42 @@
+.Notification-container{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+.Notification-content{
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+.Notification-items{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border: 1px solid #cccccc;
+  gap: 8px;
+  margin-top: 40px;
+  padding: 20px;
+}
+
+.Notification{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: #6A6A6A;
+}
+
+.Notification p{
+  padding-top: 15px;
+}
+
+.Notification-Empty{
+  font-size: 70px;
+  color: #6A6A6A;
+}

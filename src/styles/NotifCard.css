@@ -1,0 +1,4 @@
+.Notif-Card{
+  display: flex;
+  flex-direction: row;
+}

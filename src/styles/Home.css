@@ -1,0 +1,145 @@
+.home-wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.BestSeller{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 30px;
+  padding: 10px;
+}
+.bestSeller-btn{
+  font-size: 25px;
+  font-weight: 700;
+  padding: 10px 20px;
+  gap: 8px;
+  margin-right: 10px;
+  border: none;
+  background-color: white;
+}
+.bestSeller-btn::after {
+  content: ">>";
+  margin-left: 15px;
+  size: 70px;
+  font-weight: 700;
+}
+.bestSeller-btn:hover{
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.BestSeller h1{
+  font-size: 30px;
+  font-weight: 700;
+  margin-left: 30px;
+}
+.BestSellerCard{
+  display: flex;
+  overflow-x:auto;
+  margin-left: 15px;
+  margin-bottom: 25px;
+}
+.BestSellerCard::-webkit-scrollbar {
+  display: none;
+}
+
+.ProductBrand{
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  padding: 10px;
+}
+.ProductBrand h1{
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  margin-left: 45px ;
+}
+.Brand{
+  display: flex;
+  overflow:auto;
+}
+.Brand::-webkit-scrollbar {
+  display: none;
+}
+
+.Category{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Category h1{
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 25px;
+} 
+
+.CategoryImage{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin: 0px 40px;
+}
+
+@media (max-width: 1024px){
+  .BestSeller h1, .ProductBrand h1 , .Category h1{
+    font-size: 25px;
+  }
+
+  .BestSeller{
+    margin: 0;
+  }
+  .CategoryImage {
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 15px; 
+    width: max-content;
+  }
+} 
+
+@media (max-width: 769px) {
+  .home-wrapper{
+    gap: 2px;
+  }
+  .BestSeller h1, .ProductBrand h1 , .Category h1{
+    font-size: 25px;
+  }
+  .bestSeller-btn{
+    font-size: 20px;
+    margin-right: 0px;
+  }
+  .CategoryImage {
+    grid-template-columns: repeat(2, 1fr); 
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 426px) {
+  .BestSeller h1, .ProductBrand h1 , .Category h1{
+    font-size: 16px;
+  }
+  .bestSeller-btn{
+    font-size: 15px;
+  }
+  .CategoryImage {
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 10px;
+  }
+}
+
+@media (max-width: 320px) {
+  .BestSeller h1, .ProductBrand h1 , .Category h1{
+    font-size: 14px;
+  }
+  .bestSeller-btn{
+    font-size: 13px;
+  }
+  .CategoryImage {
+    grid-template-columns: repeat(1, 1fr); 
+  }
+}

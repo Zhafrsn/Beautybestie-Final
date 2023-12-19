@@ -1,0 +1,204 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 50px;
+}
+
+.login-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px;
+  justify-content: center;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #fff;
+  align-items: center;
+  gap: 24px;
+  height: 100%;
+  box-shadow: 0px 3px rgba(0, 0, 0, 0.25);
+}
+
+.login-text {
+  text-align: center;
+  color: #eca4b0;
+  font-weight: bolder;
+  font-size: 40px;
+}
+
+.login__items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+}
+
+.login-label {
+  color: #999798;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.login-button {
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: white;
+  padding: 15px 10px;
+}
+
+.login-email,
+.login-password {
+  border: none;
+  background-color: none;
+  outline: none;
+  color: black;
+  width: 100%;
+}
+
+.login-email::placeholder,
+.login-password::placeholder {
+  color: #ccc;
+  font-style: italic;
+}
+
+.login__pw-container,
+.login__email-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  width: 100%;
+}
+
+.small-error {
+  color: red;
+  font-size: 12px; 
+}
+
+.login__forgot-pw {
+  color: #eca4b0;
+  font-size: 14px;
+  text-align: right;
+  cursor: pointer;
+}
+
+.login__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+}
+
+.login__btn-login {
+  padding: 8px;
+  font-size: 20px;
+  background-color: #eca4b0;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  width: 30%;
+  cursor: pointer;
+}
+
+.login__btn-login-google {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  padding: 5px 8px;
+  background-color: white;
+  color: #999798;
+  font-weight: bold;
+  font-size: 16px;
+  border: 1px solid #eca4b0;
+  border-radius: 5px;
+  width: 60%;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.login__google-logo {
+  width: 24px;
+  height: 24px;
+}
+
+.login-or {
+  color: #999798;
+}
+
+.login__to-signup {
+  color: #999798;
+  font-size: 14px;
+}
+
+.login__click-here {
+  color: #eca4b0;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 602px) {
+  .login-container {
+    padding: 30px;
+  }
+  .login-form {
+    gap: 16px;
+    padding: 40px;
+  }
+  .login-label,
+  .login__forgot-pw {
+    font-size: 12px;
+  }
+  .login-text {
+    font-size: 30px;
+  }
+  .login-button {
+    padding: 10px;
+  }
+  .login__btn-login {
+    font-size: 16px;
+  }
+  .login__wrapper {
+    gap: 16px;
+  }
+  .login__btn-login-google {
+    width: 75%;
+    font-size: 12px;
+    .login__google-logo {
+      width: 18px;
+      height: 18px;
+    }
+  }
+  .login__to-signup {
+    font-size: 12px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .login-form {
+    width: 100%;
+    padding: 30px;
+  }
+  .login-text {
+    font-size: 26px;
+  }
+  .login-button {
+    padding: 8px;
+  }
+  .login__btn-login {
+    width: 50%;
+  }
+  .login__btn-login-google {
+    width: 90%;
+  }
+  .login__to-signup {
+    font-size: 10px;
+  }
+}

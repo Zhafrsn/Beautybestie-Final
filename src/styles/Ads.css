@@ -1,0 +1,34 @@
+.ads{
+  position: relative;
+  width: 100%;
+  z-index: -1;
+}
+.imageAds{
+  width: 100%;
+  height: 750px;
+  object-fit: fill;
+}
+
+@media (max-width: 1024px) {
+  .imageAds {
+    height: 600px; 
+  }
+}
+
+@media (max-width: 768px) {
+  .imageAds{
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .imageAds{
+    height: 250px;
+  }
+}
+
+@media (max-width: 376px) {
+  .imageAds{
+    height: 220px;
+  }
+}

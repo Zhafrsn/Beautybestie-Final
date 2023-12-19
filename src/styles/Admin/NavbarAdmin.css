@@ -1,0 +1,48 @@
+.navbar-admin{
+    display: flex;
+    width: 100%;
+    height: max-content;
+    background-color: #eca4b0;
+    position: fixed;
+    top: 0;
+    color: white;
+    padding: 3px 20px;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+}
+
+.navAdmin__left,
+.navAdmin-right{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.navAdmin__web-title{
+    display: flex;
+    height: 100%;
+    padding: 15px 60px 15px 30px;
+    border-right: 1px solid black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.navAdmin__bars-icon{
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+}
+
+.navAdmin-right{
+    margin-right: 20px;
+}
+
+.navAdmin-item{
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+}

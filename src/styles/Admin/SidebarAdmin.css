@@ -1,0 +1,124 @@
+.siderbar-admin{
+    display: flex;
+    flex-direction: column;
+    background-color: #38393A;
+    width: 17%;
+    color: #6A6A6A;
+    height: 100vh;
+    gap: 16px;
+    position: fixed;
+    z-index: 100;
+}
+
+.sideAdmin-container{
+    display: flex;
+    color: white;
+    gap: 16px;
+    align-items: center;
+}
+
+.sideAdmin__user-icon{
+    font-size: 60px;
+}
+
+.sideAdmin-user{
+    font-weight: bold;
+}
+
+.sideAdmin-status{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+}
+
+.sideAdmin__circle-icon{
+    color: #4CAF50;
+}
+
+.siderAdmin-header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #3C4043; 
+    gap: 24px;
+    padding: 10px;
+}
+
+.sidebarAdmin__search-btn{
+    background: rgba(217, 217, 217, 0.52);
+    color: white;
+    padding: 8px 0px;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    border-radius: 3px;
+}
+
+.sidebarAdmin__search-input{
+    border: none;
+    background: none;
+    outline: none;
+    color: white;
+}
+
+.sidebarAdmin__search-input::placeholder{
+    color: white;
+}
+
+.sideAdmin-text{
+    padding-left: 10px;
+}
+
+.sideAdmin-items{
+    display: flex;
+    flex-direction: column;
+    background-color: #3C4043; 
+    color: white;
+    padding: 15px; 
+    gap: 32px;
+    align-items: center;
+}
+
+.sideAdmin-label{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 16px;
+}
+
+.sideAdmin-icons{
+    font-size: 20px;
+    width: 20px;
+    height: 20px;
+    align-items: center;
+    text-align: left;
+}
+
+.sideAdmin_items-label{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-align: left;
+}
+
+.sideAdmin-settings{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 16px;
+    color: white;
+    font-weight: bold;
+    background-color: #3C4043; 
+}
+
+.sideAdmin_setting-items{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.sideAdmin_setting-label{
+    text-decoration: none;
+    color: white;
+}
